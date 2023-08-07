@@ -131,7 +131,7 @@ display: none;
   height: 10vh;
   color: white;
   background-color: #1b1b1b;
-  display: flex;
+  /* display: flex; */
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -342,6 +342,9 @@ a {
  @media (max-width: 700px) {
     .nav{
       display: none;
+    }
+    .tabBar{
+      display: flex;
     }
     .contentB{
       margin-left: 2rem;
