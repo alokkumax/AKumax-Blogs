@@ -23,6 +23,8 @@
 
     <!-- TweenMax - GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
+    <!-- EMAIL  -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <link rel="icon" type="image/x-icon" href="AK.png">
   </head>
   <body>
@@ -178,15 +180,49 @@
           </li>
         </ul>
       </div>
+      <h2>Why this challenge ?</h2>
+      <p>
+        There are big challenges in our community such as : <b>#100DaysOfCode, #30DaysOfCode, #100Days100projects</b>. <br> Its highly recommended to start small, the above 7-8 projects are in a order from simple Js functions to advance functions. <br>
+        If you are currently starting with web development or a beginner or intermediate, building JavaScript projects is the best way to learn. <br>
+        Feel free to checkout my repository. <b >ALL THE BEST</b>
+      </p>
      
     </div>
 
     <!-- VIDEOS -->
     <div class="contentV">Videos</div>
     <!-- RESUME -->
-    <div class="contentR">Resume</div>
+    <div class="contentR">
+      <span class="blog">View Resume</span>
+      <span class="simple" style="text-decoration: underline;">visit portfolio <i class="fa-solid fa-arrow-up-right-from-square"></i> </span>
+    </div>
     <!-- CONTACT -->
-    <div class="contentC">Contact</div>
+    <div class="contentC">
+
+      <h2>Drop a hello!</h2>
+
+      <div class="container">
+        <form action="https://formsubmit.co/https://formsubmit.co/el/civaji" onsubmit="sendMail(); reset(); return false;">
+          <label for="fname">Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+          <label for="lname">Email</label>
+          <input type="text" id="email" name="lastname" placeholder="Your last name..">
+
+          <label for="subject">Message</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          <!-- <button type="submit">send</button> -->
+          <div>
+            <span class="blog" type="submit"> Send</span>
+            
+          </div>
+          <!-- <input type="submit" value="Submit"> -->
+        </form>
+      </div>
+
+
+    </div>
+
     <div class="tabBar">
 
         <span id="btn11" class="active" data-text="Blogs">Blogs</span>

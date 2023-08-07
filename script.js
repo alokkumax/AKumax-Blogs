@@ -44,7 +44,7 @@ function comingSoon(){
 /// BTN 3
     document.querySelector("#btn3").addEventListener("click", function(){
     //show 3
-    document.querySelector(".contentR").style.display = "block"
+    document.querySelector(".contentR").style.display = "flex"
     
     //active 3 
     this.classList.replace("button","active");
@@ -63,7 +63,7 @@ function comingSoon(){
 /// BTN 4
     document.querySelector("#btn4").addEventListener("click", function(){
         //show 3
-        document.querySelector(".contentC").style.display = "block"
+        document.querySelector(".contentC").style.display = "flex"
         
         //active 3 
         this.classList.replace("button","active");
@@ -128,7 +128,7 @@ function comingSoon(){
     /// BTN 3
         document.querySelector("#btn33").addEventListener("click", function(){
         //show 3
-        document.querySelector(".contentR").style.display = "block"
+        document.querySelector(".contentR").style.display = "flex"
         
         //active 3 
         this.classList.replace("button","active");
@@ -147,7 +147,7 @@ function comingSoon(){
     /// BTN 4
         document.querySelector("#btn44").addEventListener("click", function(){
             //show 3
-            document.querySelector(".contentC").style.display = "block"
+            document.querySelector(".contentC").style.display = "flex"
             
             //active 3 
             this.classList.replace("button","active");
@@ -163,3 +163,17 @@ function comingSoon(){
             document.querySelector(".contentR").style.display = "none"
             
             })
+
+function sendMail(){
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "alokkumax1@gmail.com",
+        Password : "DD7D547664C7A429B65C55221FDE2F141B3F",
+        To : 'alokkumax1@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "New",
+        Body : "body"
+    }).then(
+      message => alert(message)
+    );
+}
