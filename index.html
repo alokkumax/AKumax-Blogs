@@ -26,18 +26,22 @@
     <link rel="icon" type="image/x-icon" href="AK.png">
   </head>
   <body>
-    <div class="progressbar"></div>
+    <!-- <div class="progressbar"></div> -->
+
+    
     <div class="nav">
       <div class="profile">
         <!-- <img src="pp.JPG" alt="" /> -->
         <h2>AK<span style="font-size: 20px">umax</span></h2>
       </div>
+      
       <div class="tabs">
-        <span href="" class="" data-text="Blogs">Blogs</span>
-        <span onclick="comingSoon()" href="" data-text="Videos">Videos</span>
-        <span onclick="comingSoon()" href="" data-text="Resume">Resume</span>
-        <span onclick="comingSoon()" href="" data-text="Contact">Contact</span>
+        <span id="btn1" class="active" data-text="Blogs">Blogs</span>
+        <span id="btn2" class="button" href="" data-text="Videos">Videos</span>
+        <span id="btn3" class="button" href="" data-text="Resume">Resume</span>
+        <span id="btn4" class="button" href="" data-text="Contact">Contact</span>
       </div>
+
       <div class="links">
         <a target="_blank" href="https://twitter.com/alokkumax11"
           ><i
@@ -55,7 +59,8 @@
         ></a>
       </div>
     </div>
-    <div class="content">
+    <!-- CONTENT -->
+    <div class="contentB">
       <div class="info">
         <span class="blog">blog#1</span>
         <!-- <span class="blogN">Next</span> -->
@@ -146,7 +151,7 @@
               target="_blank"
               href="https://justeat-clone.netlify.app/"
             >
-              <span class="lists" data-text="JustEat-Clone">JustEat-Clone</span>
+              <span class="lists" data-text="JustEat">JustEat</span>
             </a>
           </li>
 
@@ -175,74 +180,85 @@
           </li>
         </ul>
       </div>
-      <script>
-        $(document).ready(function () {
-          TweenMax.set(".project-preview", { width: 0 });
-
-          var tl = new TimelineLite();
-
-          $(document)
-            .on("mouseover", ".navigation-item", function (evt) {
-              tl = new TimelineLite();
-              tl.to($(".project-preview"), 1, {
-                width: "600px",
-                ease: Expo.easeInOut,
-              });
-            })
-            .on("mouseout", ".navigation-item", function (evt) {
-              tl = new TimelineLite();
-              tl.to($(".project-preview"), 0.5, {
-                width: 0,
-                ease: Expo.easeInOut,
-              });
-            });
-        });
-
-        
-
-        $(".navigation-link-1").hover(function () {
-          $(".project-preview").css({ "background-image": "url(img-1.png)" });
-          // $(".project-preview").click(li);
-        });
-
-        $(".navigation-link-2").hover(function () {
-          $(".project-preview").css({ "background-image": "url(img-2.png)" });
-        });
-
-        $(".navigation-link-3").hover(function () {
-          $(".project-preview").css({ "background-image": "url(img-3.png)" });
-        });
-
-        $(".navigation-link-4").hover(function () {
-          $(".project-preview").css({ "background-image": "url(img-4.png)" });
-        });
-
-        $(".navigation-link-5").hover(function () {
-          $(".project-preview").css({ "background-image": "url(img-5.png)" });
-        });
-
-        $(".navigation-link-6").hover(function () {
-          $(".project-preview").css({ "background-image": "url(img-6.png)" });
-        });
-
-        $(".navigation-link-7").hover(function () {
-          $(".project-preview").css({ "background-image": "url(img-7.png)" });
-        });
-
-        $(".navigation-link-8").hover(function () {
-          $(".project-preview").css({ "background-image": "url(img-8.png)" });
-        });
-        //progress fxn
-        $(window).scroll(function () {
-          var scroll = $(window).scrollTop(),
-            dh = $(document).height(),
-            wh = $(window).height();
-          scrollPercent = (scroll / (dh - wh)) * 100;
-          $(".progressbar").css("height", scrollPercent + "%");
-        });
-      </script>
+     
     </div>
 
+    <!-- VIDEOS -->
+    <!-- <div class="contentV">Videos</div> -->
+    <!-- RESUME -->
+    <!-- <div class="contentR">Resume</div> -->
+    <!-- CONTACT -->
+    <!-- <div class="contentC">Contact</div> -->
+
+
+
+    <!-- SCRIPT -->
+    <script>
+      $(document).ready(function () {
+        TweenMax.set(".project-preview", { width: 0 });
+
+        var tl = new TimelineLite();
+
+        $(document)
+          .on("mouseover", ".navigation-item", function (evt) {
+            tl = new TimelineLite();
+            tl.to($(".project-preview"), 1, {
+              width: "600px",
+              ease: Expo.easeInOut,
+            });
+          })
+          .on("mouseout", ".navigation-item", function (evt) {
+            tl = new TimelineLite();
+            tl.to($(".project-preview"), 0.5, {
+              width: 0,
+              ease: Expo.easeInOut,
+            });
+          });
+      });
+
+      
+
+      $(".navigation-link-1").hover(function () {
+        $(".project-preview").css({ "background-image": "url(img-1.png)" });
+        // $(".project-preview").click(li);
+      });
+
+      $(".navigation-link-2").hover(function () {
+        $(".project-preview").css({ "background-image": "url(img-2.png)" });
+      });
+
+      $(".navigation-link-3").hover(function () {
+        $(".project-preview").css({ "background-image": "url(img-3.png)" });
+      });
+
+      $(".navigation-link-4").hover(function () {
+        $(".project-preview").css({ "background-image": "url(img-4.png)" });
+      });
+
+      $(".navigation-link-5").hover(function () {
+        $(".project-preview").css({ "background-image": "url(img-5.png)" });
+      });
+
+      $(".navigation-link-6").hover(function () {
+        $(".project-preview").css({ "background-image": "url(img-6.png)" });
+      });
+
+      $(".navigation-link-7").hover(function () {
+        $(".project-preview").css({ "background-image": "url(img-7.png)" });
+      });
+
+      $(".navigation-link-8").hover(function () {
+        $(".project-preview").css({ "background-image": "url(img-8.png)" });
+      });
+      //progress fxn
+      $(window).scroll(function () {
+        var scroll = $(window).scrollTop(),
+          dh = $(document).height(),
+          wh = $(window).height();
+        scrollPercent = (scroll / (dh - wh)) * 100;
+        $(".progressbar").css("height", scrollPercent + "%");
+      });
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
