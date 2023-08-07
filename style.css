@@ -1,0 +1,251 @@
+body {
+    background-color: #fff;
+    color: #28283d;
+  margin: 0px;
+  /* background-color: #2c2f44;
+  color: white; */
+  font-family: Poppins;
+}
+.info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.soon{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.blog:hover{
+  cursor: pointer;
+}
+.simple:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+.blog{
+  color: #28004d;
+  width: fit-content;
+  background-color: #cdb2f0;
+  border: 1px solid #8f39ff;
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+}
+.blogN{
+  color: #000000;
+  width: fit-content;
+  background-color: #dcc3fd;
+  border: 1px solid #8427ff;
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+}
+.simple{
+  color: #654491;
+
+}
+.light{
+    background-color: #fff;
+    color: #28283d;
+}
+.nav {
+    color: white;
+  width: 300px;
+  height: 100vh;
+  /* background-color: #28283d; */
+  background-color: #1b1b1b;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 25%;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.active{
+  text-decoration: underline;
+  color: rgb(217, 66, 255);
+
+}
+.links{
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+img {
+  width: 145px;
+  cursor:pointer;
+}
+
+.ban{
+    width: 35rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+.ban:hover{
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+h2 {
+  /* color: #fff; */
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.content{
+    margin-left: 350px;
+    margin-top: 2rem;
+    margin-right: 3rem;
+}
+table, td, th {  
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  th, td {
+    padding: 15px;
+  }
+
+footer{
+  margin: 4rem;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  overflow-x: hidden;
+  font-family: Poppins;
+
+}
+.progressbar {
+  position: fixed;
+  top: 0;
+  /* left: 99%; */
+  right: 0.04%;
+  background: rgba(0, 0, 0, 1);
+  width: 5px;
+  z-index: 1;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+
+p{
+  color: #000000;
+  font-size: 1rem;
+}
+li{
+  color: #000000;
+  margin-left: 0px;
+  list-style:disc
+}
+p:hover{
+  pointer-events:none
+}
+
+.navigation-wrapper ul {
+  /* margin-top: 20px; */
+  /* margin-left: 100px; */
+  /* margin-bottom: 200px; */
+  list-style: none;
+  /* position: absolute; */
+}
+
+.navigation-item {
+  display: grid;
+  user-select: none;
+  margin: 40px 0;
+  width: fit-content;
+  list-style:armenian;
+}
+
+a {
+  /* font-family: "Cosi Azure"; */
+  font-size: 25px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.lists {
+  position: relative;
+  display: block;
+  color: rgb(0, 0, 0);
+  /* width: 100px; */
+}
+
+.navigation-item span:before {
+  width: 0;
+  color: #000000;
+  overflow: hidden;
+  position: absolute;
+  content: attr(data-text);
+  transition: all 1s cubic-bezier(0.84, 0, 0.08, 0.99);
+  text-decoration: underline;
+}
+
+.navigation-item span:hover:before {
+  width: 100%;
+}
+
+.project-preview-wrapper {
+  width: 100%;
+  /* height: 100vh; */
+  /* position: fixed; */
+  display: flex;
+  margin-top: -40px;
+  justify-content: center;
+}
+
+.project-preview {
+  position: fixed;
+  top: 12%;
+  left: 60%;
+  width: 0px;
+  height: 400px;
+  background: url(img-1.jpg) no-repeat 50% 50%;
+  background-size: cover;
+  overflow: hidden;
+}
+
+@media (max-width: 900px) {
+  .progressbar,
+
+  .project-preview-wrapper {
+    display: none;
+  }
+
+  a {
+    font-size: 24px;
+  }
+}

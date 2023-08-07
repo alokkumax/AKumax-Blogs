@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+    <!-- TweenMax - GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
+  </head>
+  <body>
+    <div class="progressbar"></div>
+    <div class="nav">
+      <div class="profile">
+        <!-- <img src="pp.JPG" alt="" /> -->
+        <h2>AK<span style="font-size: 20px">umax</span></h2>
+      </div>
+      <div class="tabs">
+        <span href="" class="active">Blogs</span>
+        <span onclick="comingSoon()" href="">Videos</span>
+        <span onclick="comingSoon()" href="">Resume</span>
+        <span onclick="comingSoon()" href="">Contact</span>
+      </div>
+      <div class="links">
+        <a target="_blank" href="https://twitter.com/alokkumax11"
+          ><i
+            class="fa-brands fa-square-x-twitter fa-1x"
+            style="color: #cccccc"
+          ></i
+        ></a>
+        <a target="_blank" href="https://github.com/alokkumax"
+          ><i class="fa-brands fa-github fa-1x" style="color: #cccccc"></i
+        ></a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/alok-kumar-987b4b190/"
+          ><i class="fa-brands fa-linkedin fa-1x" style="color: #cccccc"></i
+        ></a>
+      </div>
+    </div>
+    <div class="content">
+      <div class="info">
+        <span class="blog">blog#1</span>
+        <!-- <span class="blogN">Next</span> -->
+        <span onclick="comingSoon()" class="simple">see all</span>
+      </div>
+
+      <h2>7 DAYS - 7 PROJECTS CHALLENGE</h2>
+      <a target="_blank" href="https://github.com/alokkumax"
+        ><img class="ban" src="grp.png" alt=""
+      /></a>
+      <p>I finished this challenge on 6th August ‘ 23 😅</p>
+      <h2>Purpose</h2>
+      <p>
+        7 Days and 7 Projects on plain <b>HTML, CSS and JavaScript </b>and
+        external libraries like <b>Bootstrap, jQuerry and GSAP,</b> this one
+        week long small challenge has turned out the best for me to grasp the
+        basics of JavaScript, revising the basics like arrays, strings, events,
+        DOM, CDN etc. In the following peojects these all came very handy.
+      </p>
+      <h2>Rules for me 😅</h2>
+      <li>
+        create a project per day a project could be: an app, a component, a
+        website, a game, a library, etc
+      </li>
+      <li>the project has to be done by 11:59 PM</li>
+      <li>make sure to deploy and maintain responsive-ness throughout</li>
+      <h2>
+        PROJECT LIST
+        <span style="font-size: 16px; font-weight: 400; font-family: Poppins; text-transform: lowercase;"
+          >(hover on projects to preview, click to visit)</span
+        >
+      </h2>
+
+      <div class="navigation-wrapper">
+        <div class="project-preview-wrapper">
+          <div class="project-preview"></div>
+        </div>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a
+              class="navigation-link navigation-link-1"
+              target="_blank"
+              href="https://drum-bajao.netlify.app/"
+            >
+              <span class="lists" data-text="DrumKit">DrumKit🥁</span>
+            </a>
+          </li>
+          <div class="project-overlay"></div>
+          <li class="navigation-item">
+            <a
+              class="navigation-link navigation-link-2"
+              target="_blank"
+              href="https://diceeeee.netlify.app/"
+            >
+              <span class="lists">Dicee🎲</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a
+              class="navigation-link navigation-link-3"
+              target="_blank"
+              href="https://fancy-jscalc.netlify.app/"
+            >
+              <span class="lists">JsCalculator</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a
+              class="navigation-link navigation-link-4"
+              target="_blank"
+              href="https://simon-game-kumax.netlify.app/"
+            >
+              <span class="lists">SimonGame</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a
+              class="navigation-link navigation-link-5"
+              target="_blank"
+              href="https://hangman-js-kumax.netlify.app/"
+            >
+              <span class="lists">HangMan</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a
+              class="navigation-link navigation-link-6"
+              target="_blank"
+              href="https://justeat-clone.netlify.app/"
+            >
+              <span class="lists">JustEat-Clone</span>
+            </a>
+          </li>
+
+          <li class="navigation-item">
+            <a
+              class="navigation-link navigation-link-7"
+              target="_blank"
+              href="https://js-tabss.netlify.app/"
+            >
+              <span class="lists">Tabs</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a
+              class="navigation-link navigation-link-8"
+              target="_blank"
+              href="#"
+            >
+              <span class="lists"
+                >AKumax<span style="font-size: 15px; font-weight: 500">
+                  (bonus)</span
+                ></span
+              >
+            </a>
+          </li>
+        </ul>
+      </div>
+      <script>
+        $(document).ready(function () {
+          TweenMax.set(".project-preview", { width: 0 });
+
+          var tl = new TimelineLite();
+
+          $(document)
+            .on("mouseover", ".navigation-item", function (evt) {
+              tl = new TimelineLite();
+              tl.to($(".project-preview"), 1, {
+                width: "600px",
+                ease: Expo.easeInOut,
+              });
+            })
+            .on("mouseout", ".navigation-item", function (evt) {
+              tl = new TimelineLite();
+              tl.to($(".project-preview"), 0.5, {
+                width: 0,
+                ease: Expo.easeInOut,
+              });
+            });
+        });
+
+        $(".navigation-link-1").hover(function () {
+          $(".project-preview").css({ "background-image": "url(img-1.png)" });
+          // $(".project-preview").click(li);
+        });
+
+        $(".navigation-link-2").hover(function () {
+          $(".project-preview").css({ "background-image": "url(img-2.png)" });
+        });
+
+        $(".navigation-link-3").hover(function () {
+          $(".project-preview").css({ "background-image": "url(img-3.png)" });
+        });
+
+        $(".navigation-link-4").hover(function () {
+          $(".project-preview").css({ "background-image": "url(img-4.png)" });
+        });
+
+        $(".navigation-link-5").hover(function () {
+          $(".project-preview").css({ "background-image": "url(img-5.png)" });
+        });
+
+        $(".navigation-link-6").hover(function () {
+          $(".project-preview").css({ "background-image": "url(img-6.png)" });
+        });
+
+        $(".navigation-link-7").hover(function () {
+          $(".project-preview").css({ "background-image": "url(img-7.png)" });
+        });
+
+        $(".navigation-link-8").hover(function () {
+          $(".project-preview").css({ "background-image": "url(img-8.png)" });
+        });
+        //progress fxn
+        $(window).scroll(function () {
+          var scroll = $(window).scrollTop(),
+            dh = $(document).height(),
+            wh = $(window).height();
+          scrollPercent = (scroll / (dh - wh)) * 100;
+          $(".progressbar").css("height", scrollPercent + "%");
+        });
+      </script>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
