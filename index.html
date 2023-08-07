@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>AKumax</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,6 +23,7 @@
 
     <!-- TweenMax - GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="AK.png">
   </head>
   <body>
     <div class="progressbar"></div>
@@ -32,10 +33,10 @@
         <h2>AK<span style="font-size: 20px">umax</span></h2>
       </div>
       <div class="tabs">
-        <span href="" class="active">Blogs</span>
-        <span onclick="comingSoon()" href="">Videos</span>
-        <span onclick="comingSoon()" href="">Resume</span>
-        <span onclick="comingSoon()" href="">Contact</span>
+        <span href="" class="" data-text="Blogs">Blogs</span>
+        <span onclick="comingSoon()" href="" data-text="Videos">Videos</span>
+        <span onclick="comingSoon()" href="" data-text="Resume">Resume</span>
+        <span onclick="comingSoon()" href="" data-text="Contact">Contact</span>
       </div>
       <div class="links">
         <a target="_blank" href="https://twitter.com/alokkumax11"
@@ -109,7 +110,7 @@
               target="_blank"
               href="https://diceeeee.netlify.app/"
             >
-              <span class="lists">Dicee🎲</span>
+              <span class="lists" data-text="Dicee">Dicee🎲</span>
             </a>
           </li>
           <li class="navigation-item">
@@ -118,7 +119,7 @@
               target="_blank"
               href="https://fancy-jscalc.netlify.app/"
             >
-              <span class="lists">JsCalculator</span>
+              <span class="lists" data-text="JsCalculator">JsCalculator</span>
             </a>
           </li>
           <li class="navigation-item">
@@ -127,7 +128,7 @@
               target="_blank"
               href="https://simon-game-kumax.netlify.app/"
             >
-              <span class="lists">SimonGame</span>
+              <span class="lists" data-text="SimonGame">SimonGame</span>
             </a>
           </li>
           <li class="navigation-item">
@@ -136,7 +137,7 @@
               target="_blank"
               href="https://hangman-js-kumax.netlify.app/"
             >
-              <span class="lists">HangMan</span>
+              <span class="lists" data-text="HangMan">HangMan</span>
             </a>
           </li>
           <li class="navigation-item">
@@ -145,7 +146,7 @@
               target="_blank"
               href="https://justeat-clone.netlify.app/"
             >
-              <span class="lists">JustEat-Clone</span>
+              <span class="lists" data-text="JustEat-Clone">JustEat-Clone</span>
             </a>
           </li>
 
@@ -155,7 +156,7 @@
               target="_blank"
               href="https://js-tabss.netlify.app/"
             >
-              <span class="lists">Tabs</span>
+              <span class="lists" data-text="Tabs">Tabs</span>
             </a>
           </li>
           <li class="navigation-item">
@@ -165,6 +166,7 @@
               href="#"
             >
               <span class="lists"
+              data-text="AKumax"
                 >AKumax<span style="font-size: 15px; font-weight: 500">
                   (bonus)</span
                 ></span
@@ -195,6 +197,8 @@
               });
             });
         });
+
+        
 
         $(".navigation-link-1").hover(function () {
           $(".project-preview").css({ "background-image": "url(img-1.png)" });

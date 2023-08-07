@@ -79,6 +79,19 @@ body {
   color: rgb(217, 66, 255);
 
 }
+.tabs span:before {
+  width: 0;
+  color: rgb(217, 66, 255);
+  overflow: hidden;
+  position: absolute;
+  content: attr(data-text);
+  transition: all 1s cubic-bezier(0.84, 0, 0.08, 0.99);
+  text-decoration: underline;
+}
+
+.tabs span:hover:before {
+  width: 100%;
+}
 .links{
   margin: 2rem;
   display: flex;
@@ -175,15 +188,11 @@ p:hover{
 }
 
 .navigation-wrapper ul {
-  /* margin-top: 20px; */
-  /* margin-left: 100px; */
-  /* margin-bottom: 200px; */
   list-style: none;
-  /* position: absolute; */
 }
 
 .navigation-item {
-  display: grid;
+  display: block;
   user-select: none;
   margin: 40px 0;
   width: fit-content;
@@ -191,7 +200,6 @@ p:hover{
 }
 
 a {
-  /* font-family: "Cosi Azure"; */
   font-size: 25px;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.3);
@@ -201,7 +209,6 @@ a {
   position: relative;
   display: block;
   color: rgb(0, 0, 0);
-  /* width: 100px; */
 }
 
 .navigation-item span:before {
@@ -217,6 +224,8 @@ a {
 .navigation-item span:hover:before {
   width: 100%;
 }
+
+
 
 .project-preview-wrapper {
   width: 100%;
