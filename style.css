@@ -355,4 +355,9 @@ a {
       margin-left: 2rem;
     }
  }
+ @media (max-width:430px) {
+  .ban{
+    width: 20rem;
+  }
+ }
 
