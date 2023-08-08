@@ -137,9 +137,6 @@ input[type=submit]:hover {
   width: 400px;
 }
 
-
-
-
 .contentR{
   display: none;
   margin-left: 22rem;
@@ -153,12 +150,33 @@ input[type=submit]:hover {
   gap: 1rem;
   
 }
+.tabs{
+  cursor: pointer;
+  background-color: transparent;
+  border: #000000;
+  color: #ffffff;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-transform: uppercase;
+}
+.active{
+  cursor: pointer;
+  background-color: transparent;
+  border: #000000;
+  color: rgb(217, 66, 255);
+  font-size: 1em;
+  text-decoration: underline;
+}
 .button{
   cursor: pointer;
   background-color: transparent;
   border: #000000;
   color: #ffffff;
   font-size: 1em;
+  text-transform: uppercase;
 }
 .button::before{
   width: 0;
@@ -172,7 +190,7 @@ input[type=submit]:hover {
 .button:hover::before{
   width: 0%;
 }
-.active{
+.tabBar > .active{
   cursor: pointer;
   background-color: transparent;
   border: #000000;
