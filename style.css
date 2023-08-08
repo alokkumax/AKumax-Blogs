@@ -169,6 +169,7 @@ input[type=submit]:hover {
   color: rgb(217, 66, 255);
   font-size: 1em;
   text-decoration: underline;
+  text-transform: uppercase;
 }
 .button{
   cursor: pointer;
@@ -186,6 +187,7 @@ input[type=submit]:hover {
   content: attr(data-text);
   transition: all 1s cubic-bezier(0.84, 0, 0.08, 0.99);
   text-decoration: underline;
+  text-transform: uppercase;
 }
 .button:hover::before{
   width: 0%;
