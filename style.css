@@ -40,7 +40,7 @@ body {
 }
 .send{
   font-size: 16px;
-  align-self: center;;
+  align-self: flex-end;;
 }
 .blogN{
   color: #000000;
