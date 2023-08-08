@@ -48,6 +48,7 @@ body {
 }
 .simple{
   color: #654491;
+  text-decoration: underline;
 
 }
 .light{
@@ -83,7 +84,42 @@ body {
 .cont{
   overflow: auto;
 }
-.contentV,
+.contentV{
+  display: none;
+  margin-left: 22rem;
+  margin-top: 2rem;
+  margin-right: 3rem;
+  height: 100vh;
+
+  flex-direction: column;
+}
+.cardVid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.card{
+  /* background-color: #8260fa; */
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.card > img{
+  width: 100%;
+  height: 100%;
+}
+.card > p {
+  font-size:18px;
+  margin: 1rem;
+}
+.card:hover{
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+
+}
+
 .contentC{
 display: none;
   margin-left: 22rem;
@@ -493,6 +529,10 @@ a {
   }
   .contentC > h2{
     margin-top: -5rem;
+  }
+  h2{
+    font-size: 21px;
+
   }
  }
 

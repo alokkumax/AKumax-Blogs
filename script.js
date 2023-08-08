@@ -25,7 +25,7 @@ function comingSoon(){
 //BTN 2
     document.querySelector("#btn2").addEventListener("click", function(){
     //show 2
-    document.querySelector(".contentV").style.display = "block"
+    document.querySelector(".contentV").style.display = "flex"
     //active 2 
     this.classList.replace("button","active");
     
@@ -109,7 +109,7 @@ function comingSoon(){
     //BTN 2
         document.querySelector("#btn22").addEventListener("click", function(){
         //show 2
-        document.querySelector(".contentV").style.display = "block"
+        document.querySelector(".contentV").style.display = "flex"
         //active 2 
         this.classList.replace("button","active");
         
