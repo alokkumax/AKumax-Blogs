@@ -30,9 +30,9 @@ body {
   cursor: pointer;
 }
 .blog{
-  color: #28004d;
+  color: #51207e;
   width: fit-content;
-  background-color: #cdb2f0;
+  background-color: #d1afff;
   border: 1px solid #8f39ff;
   border-radius: 15px;
   padding: 0.5rem 1rem;
@@ -49,6 +49,17 @@ body {
 .simple{
   color: #654491;
   text-decoration: underline;
+
+}
+.contentR > .blog{
+  color: #51207e;
+  width: fit-content;
+  background-color: #d1afff;
+  border: 1px solid #8f39ff;
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+  height: fit-content;
+
 
 }
 .light{
@@ -532,7 +543,15 @@ a {
   }
   h2{
     font-size: 21px;
-
+  }
+  .card{
+    /* margin: 1rem; */
+    width: 280px;
+  }
+  .contentR{
+    margin-top: 0px;
+    flex-direction: column;
+    gap: 1.5rem;
   }
  }
 
