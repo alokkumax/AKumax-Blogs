@@ -153,35 +153,32 @@ input[type=submit]:hover {
   gap: 1rem;
   
 }
-/* button{
-  color: #28004d;
-  width: fit-content;
-  background-color: #cdb2f0;
-  border: 1px solid #8f39ff;
-  border-radius: 15px;
-  padding: 0.5rem 1rem;
-  height: fit-content;
-  font-size: 15px;
-  font-weight: 300;
-} */
-.links-section{
-  
-}
-
-.tabs {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  height: 25%;
-  color: white;
-  text-transform: uppercase;
+.button{
   cursor: pointer;
+  background-color: transparent;
+  border: #000000;
+  color: #ffffff;
+  font-size: 1em;
 }
-
-.active{
-  text-decoration: underline;
+.button::before{
+  width: 0;
   color: rgb(217, 66, 255);
+  overflow: hidden;
+  position: absolute;
+  content: attr(data-text);
+  transition: all 1s cubic-bezier(0.84, 0, 0.08, 0.99);
+  text-decoration: underline;
+}
+.button:hover::before{
+  width: 0%;
+}
+.active{
+  cursor: pointer;
+  background-color: transparent;
+  border: #000000;
+  color: rgb(217, 66, 255);
+  font-size: 1em;
+  text-decoration: underline;
 
 }
 .tabs span:before {
