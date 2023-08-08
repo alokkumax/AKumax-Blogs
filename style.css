@@ -38,6 +38,10 @@ body {
   padding: 0.5rem 1rem;
   height: fit-content;
 }
+.send{
+  font-size: 16px;
+  align-self: center;;
+}
 .blogN{
   color: #000000;
   width: fit-content;
