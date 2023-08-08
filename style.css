@@ -477,6 +477,7 @@ a {
   background: url(img-1.jpg) no-repeat 50% 50%;
   background-size:contain;
   overflow: hidden;
+
 }
 
 @media (max-width: 900px) {
